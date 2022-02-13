@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="large.css">
+    <title>spend Bill Gates fortune</title>
+    <link rel="icon" type="image/x-icon" href="assests/icon_bill_gates.png">
+</head>
+
+<body style="background-color: whitesmoke;">
+    <div class="container-fluid" style="width: 100%">
+        <h1 class="text-center">spend bill gates fortune</h1>
+        <hr><br><br>
+        <header>
+            <div class="alert alert-primary" role="alert">
+                <div class=" badge badge-secondary border" style="width: 100%;" id="intro">
+                    <div id="who">
+                        <div>
+                            <img src="assests/bill_gates_photo.jpg" id="img_bill_gates" class="rounded img-fluid">
+                        </div>
+                        <div>
+                            <a href="https://fr.wikipedia.org/wiki/Bill_Gates" class=" badge badge-secondary " style="font-size: 25px;padding-top:-80%;">who's bill gates ?</a><br><br>
+                            <p id="def_bill_gates"> William Henry Gates III, known as Bill Gates [bɪl ɡeɪts]<br> born October 28, 1955 <br> in Seattle, Washington,<br> is an American computer scientist, entrepreneur <br> and billionaire. He is known<br>as the founder of Microsoft
+                                in 1975<br> and its main shareholder until 20142. <br> Thanks to the commercial success of Microsoft, he <br> has been one of the richest men <br> in the world since 1996. In 2021, the magazine <br> Forbes class Bill Gates
+                                4th fortune with <br> 124 billion dollars3.</p>
+                        </div>
+                    </div>
+                </div><br><br>
+        </header>
+        </div>
+        <div class="container sticky-top" style="background-image: url(/assests/dollars.jpeg);">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h2 class="badge badge-secondary" style="font-size: 30px;">bill gates net worth</h2>
+                </div>
+                <div class="col-sm text-center badge badge-secondary" style="font-size: 30px;">
+                    <span id="worth">132100000000</span>$<span id="error" class="alert alert-danger hidden"></span>
+                </div>
+            </div>
+        </div>
+        <article id="ens">
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id="im&na" class="sticky-top">
+                        <img src="/assests/pumpkin-key.jpg" class="rounded img-fluid" height="300px" width="320px">
+                        <h3 id="desc">Pumpkin Key, Florida Keys,<br>Florida
+                        </h3>
+                        <h4 class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;"><span id="price">9500000000</span>$</h4>
+                    </div><br>
+                    <div style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" onclick=" verif(9500000000); " class="btn btn-success" style="font-size: 20px;" id="buy">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity1" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;" id="sell">sell</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id=im&na>
+                        <img src="/assests/estancia.png" class="rounded img-fluid" height="300px" width="320px">
+                        <h3 id="desc">Willow Creek Estancia, San Diego,California</h3>
+                        <h4 id="price" class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;">98 500 000 $</h4>
+                    </div><br>
+                    <div id="buy" style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;" onclick="buySmthng(98500000 ,'quantity2');">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity2" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;">sell</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id=im&na>
+                        <img src="/assests/mahopac_drone.jpg" class="rounded img-fluid" height="300px" width="320px" style="margin-left: -2%;">
+                        <h3 id="desc"> Stonewall Farm, Westchester County, New York</h3>
+                        <h4 id="price" class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;">100 000 000 $</h4>
+                    </div><br>
+                    <div id="buy" style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;">sell</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id=im&na>
+                        <img src="/assests/theole.png" height="300px" class="rounded img-fluid" width="320px" style="margin-left: -2%;">
+                        <h3 id="desc">Villa Theoule Sur Mer, Cannes, France
+                        </h3>
+                        <h4 id="price" class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;">101 600 000$</h4>
+                    </div><br>
+                    <div id="buy" style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;">sell</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="ens">
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id="im&na" class="sticky-top">
+                        <img src="/assests/iphone-13-pro.jpeg" class="rounded img-fluid" height="300px" width="320px">
+                        <h3 id="desc">iPHONE 13 PRO MAX</h3>
+                        <h4 class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;"><span id="price_iphone"></span>1599 $</h4>
+                    </div><br>
+                    <div style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;" id="buy">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;" id="sell">sell</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id=im&na>
+                        <img src="/assests/most_val.jpeg" class="rounded img-fluid" height="300px" width="320px">
+                        <h3 id="desc">most expensive AIRPODS in the world </h3>
+                        <h4 id="price" class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;">98 500 000 $</h4>
+                    </div><br>
+                    <div id="buy" style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;">sell</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id=im&na>
+                        <img src="/assests/most_collect.webp" class="rounded img-fluid" height="300px" width="320px" style="margin-left: -2%;">
+                        <h3 id="desc">most valyable nft collection in the world </h3>
+                        <h4 id="price" class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;">100 000 000 $</h4>
+                    </div><br>
+                    <div id="buy" style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;">sell</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid shadow p-3 mb-5 bg-white rounded" style="background-color: lightblue;" id="boxer">
+                <div id="buy_sell">
+                    <div id=im&na>
+                        <img src="/assests/theole.png" height="300px" class="rounded img-fluid" width="320px" style="margin-left: -2%;">
+                        <h3 id="desc">Villa Theoule Sur Mer, Cannes, France
+                        </h3>
+                        <h4 id="price" class="badge badge-pill badge-light" style="font-size: 25px;margin-left: 20%;">101 600 000$</h4>
+                    </div><br>
+                    <div id="buy" style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-column-gap: 10px;">
+                        <button type="button" class="btn btn-success" style="font-size: 20px;">buy</button>
+                        <span class="badge badge-pill badge-primary" id="quantity" style="font-size: 20px;">0</span>
+                        <button type="button" class="btn btn-danger" style="font-size: 20px;">sell</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>you have been able to spend all of Bill gates money</p>
+                <hr>
+                <p class="mb-0">to buy thungs without the need to look at the price you have to work without the need to look to the time keep that in mind</p>
+            </div>
+        </footer>
+        <script src="script\script.js"></script>
+</body>
+
+</html>

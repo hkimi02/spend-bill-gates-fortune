@@ -1,0 +1,21 @@
+@media screen and (min-width:850px) {
+    #who {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #img_bill_gates {
+        width: 700px;
+        height: 475px;
+    }
+    #def_bill_gates {
+        font-size: 25px;
+    }
+    #boxer {
+        width: auto;
+    }
+    #ens {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}
